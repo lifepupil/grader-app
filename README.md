@@ -1,7 +1,8 @@
 # grader-app
 
 #### Setup
-
+./setup.sh
+gulp
 
 #### Deploy
 ```
