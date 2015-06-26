@@ -6,9 +6,10 @@ angular.module('grader-app')
 
   $stateProvider
   .state('home', {url: '/', templateUrl: '/views/general/home.html'})
-  .state('about', {url: '/about', templateUrl: '/views/general/about.html'})
-  .state('faq', {url: '/faq', templateUrl: '/views/general/faq.html'})
-  .state('contact', {url: '/contact', templateUrl: '/views/general/contact.html'})
+  .state('new-assignment', {url: '/about', templateUrl: '/views/general/new-assignment.html', controller: 'gradingCtrl'})
+  .state('grade-entry', {url: '/faq', templateUrl: '/views/general/grade-entry.html', controller: 'gradingCtrl'})
+  .state('add-student', {url: '/faq', templateUrl: '/views/general/add-student.html', controller: 'gradingCtrl'})
+  .state('grade-display', {url: '/faq', templateUrl: '/views/general/grade-display.html', controller: 'gradingCtrl'})
   .state('register', {url: '/register', templateUrl: '/views/users/users.html', controller: 'UsersCtrl'})
   .state('login', {url: '/login', templateUrl: '/views/users/users.html', controller: 'UsersCtrl'});
 });
