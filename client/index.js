@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('poseidon', ['firebase', 'ui.router']);
+angular.module('grader-app', ['firebase', 'ui.router']);

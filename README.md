@@ -1,12 +1,7 @@
-# Poseidon
+# grader-app
 
 #### Setup
-```
-git clone https://github.com/coding-house-apr2015/poseidon my-app
-cd my-app
-./setup.sh
-gulp
-```
+
 
 #### Deploy
 ```
@@ -32,5 +27,3 @@ NODE_ENV=production gulp aws:publish:full
 
 #### HTML Features
 - Jade
-
-#### Looking for [Apollo](https://github.com/chyld/apollo)?
