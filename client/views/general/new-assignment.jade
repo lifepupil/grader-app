@@ -1,1 +1,12 @@
 h3 New Assignment
+.row
+  .col-xs-4.col-xs-offset-4
+    label(for='studentName') Student Name
+    select
+      option(value='name') name
+      option(value='anothername') anothername
+    label(for='assignmentTitle') Assignment Title
+    input.form-control#assignmentTitle(type='text', name='assignmentTitle', ng-model='assignment.title')
+    label(for='dueDate') Due Date
+    input.form-control#dueDate(type='Date', name='dueDate')
+    button.btn.btn-success(ng-click='addStudent(student)') Add Student
