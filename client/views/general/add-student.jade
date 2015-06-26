@@ -9,3 +9,13 @@ h3 Add Student
     label(for='studentCohort') Student Cohort
     input.form-control#studentID(type='text', name='studentCohort', ng-model='student.cohort')
     button.btn.btn-success(ng-click='addStudent(student)') Add Student
+
+.row
+  .col-xs-4.col-xs-offset-4
+    table
+      thead
+        tr
+          th Current Students
+      tbody
+        tr (ng-repeat='for student in students')
+          td {{student}}
