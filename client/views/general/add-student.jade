@@ -2,5 +2,10 @@ h3 Add Student
 
 .row
   .col-xs-4.col-xs-offset-4
-    input.form-control#studentID(type='text', name='studentID', ng-model='student.name')
-    button.btn.btn-success(ng-click='addStudent(student)')
+    label(for='studentName') Student Name
+    input.form-control#studentID(type='text', name='studentName', ng-model='student.name')
+    label(for='studentID') Student ID
+    input.form-control#studentID(type='text', name='studentID', ng-model='student.id')
+    label(for='studentCohort') Student Cohort
+    input.form-control#studentID(type='text', name='studentCohort', ng-model='student.cohort')
+    button.btn.btn-success(ng-click='addStudent(student)') Add Student
