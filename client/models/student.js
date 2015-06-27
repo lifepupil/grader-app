@@ -7,7 +7,9 @@ angular.module('grader-app')
   function Student () {
   };
 
-  
+  Student.add = function(student){
+    return $http.post(nodeUrl + '/users');
+  };
 
   return Student;
 
