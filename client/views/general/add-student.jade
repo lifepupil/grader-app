@@ -10,12 +10,18 @@ h3 Add Student
     input.form-control#studentID(type='text', name='studentCohort', ng-model='student.cohort')
     button.btn.btn-success(ng-click='addStudent(student)') Add Student
 
+h3 Current Students
+
 .row
   .col-xs-4.col-xs-offset-4
     table
       thead
         tr
-          th Current Students
+          th Student Name
+          th Student ID
+          th Student Cohort
       tbody
         tr(ng-repeat='student in students')
-          td {{student}}
+          td {{student.name}}
+          td {{student.id}}
+          td {{student.cohort}}
