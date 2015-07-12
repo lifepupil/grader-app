@@ -8,7 +8,7 @@ angular.module('grader-app', ['firebase'])
   }
 
   Student.add = function(student){
-    return $http.post(nodeUrl + '/users');
+    return $http.post(nodeUrl + '/student');
   };
 
   return Student;
